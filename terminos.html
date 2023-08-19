@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="termino-condiciones/css/terminos.css">
+    <title>Terminos y condiciones</title>
+</head>
+
+<body>
+    <section class="volver">
+        <a href="index.html">
+            <h1>Geinz</h1>
+        </a>
+    </section>
+    <section class="primera-part">
+        <div class="title-terminos">
+            <h1 class="titulos_h1">Terminos y condiciones geinz</h1>
+            <p class="parrafo-title textomostra">Bienvenido a Geinz, un servicio en línea que ofrece la venta de sitios web
+                personalizados. Antes de
+                utilizar nuestros servicios, te pedimos que leas detenidamente nuestros términos y condiciones. Al
+                acceder y utilizar nuestro sitio web y adquirir nuestros servicios, aceptas cumplir con los siguientes
+                términos:</p> <br>
+
+            <div class="parrafo_p">
+                <p class="titulos textomostra">Uso del Servicio: </p>
+            </div>
+
+            <p class="textomostra"> 1. Geinz se compromete a ofrecer servicios para la creación y entrega de sitios web personalizados. El
+                cliente acepta proporcionar información precisa y completa para la creación del sitio web. <br><br>
+
+                2. El cliente es responsable de la veracidad y exactitud de los datos proporcionados y reconoce que
+                cualquier información incorrecta puede afectar la calidad y funcionalidad del sitio web entregado.
+                <br><br>
+                3. Los sitios web entregados por Geinz estarán sujetos a una revisión y aprobación final por parte del
+                cliente antes de su lanzamiento.
+            </p><br><br>
+
+            <div class="parrafo_p2">
+                <p class="titulos textomostra">Entrega y Tiempo Estimado: </p>
+            </div>
+
+
+            <p class="textomostra"> 1. Geinz se esforzará por cumplir con los plazos de entrega acordados, sin embargo, el tiempo de entrega
+                puede variar según la complejidad y características del sitio web. <br> <br>
+
+                2. La entrega del sitio web estará sujeta a la cooperación y retroalimentación oportuna del cliente
+                durante
+                el proceso de diseño y desarrollo.</p> <br><br>
+
+            <div class="parrafo_p2">
+                <p class="titulos textomostra"> Propiedad Intelectual:</p>
+            </div>
+
+            <p class="textomostra">
+                1. Geinz retendrá los derechos de autor y la propiedad intelectual sobre el diseño y código generado
+                para el
+                sitio web entregado. <br><br>
+
+                2. El cliente recibirá una licencia de uso no exclusiva para el sitio web final, sujeto al pago completo
+                del
+                servicio. <br><br>
+            </p>
+            <div class="parrafo_p2">
+                <p class="titulos textomostra">Política de Reembolso:</p>
+            </div>
+
+            <p class="textomostra"> 1. Si el cliente no está satisfecho con el sitio web entregado o si surgen problemas técnicos no
+                resueltos,
+                Geinz podrá ofrecer una revisión o reembolso parcial según su criterio. <br><br>
+
+                2. Las solicitudes de reembolso deben ser presentadas dentro de los 30 días posteriores a la entrega del
+                sitio web.</p> <br><br>
+
+            <div class="parrafo_p2">
+                <P class="titulos textomostra">Limitación de Responsabilidad:</P>
+            </div>
+
+            <P class="final textomostra"> 1. Geinz no será responsable de pérdidas o daños indirectos, incidentales o
+                consecuenciales relacionados con
+                el uso de los sitios web entregados. <br><br>
+
+                2. El cliente acepta que el uso de los sitios web entregados es bajo su propio riesgo y responsabilidad.
+            </P>
+        </div>
+    </section>
+    <script>
+          
+function mostrartexto(){
+    const elementos=document.querySelectorAll('.textomostra');
+
+    elementos.forEach(elemento =>{
+
+        const poscision =elemento.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if(poscision < windowHeight){
+            elemento.classList.add('mostrartexto')
+        }
+    })
+}
+
+window.addEventListener('scroll',mostrartexto);
+
+mostrartexto();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    scroll-behavior: smooth;
+    height: 200vh;
+    overflow-x: hidden;
+    background-image: url(/imgWeb/fondo-platillas.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: 70vh;
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+
+.title-header {
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 5em;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.title-header h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 300%;
+}
+
+.title-header p {
+    padding-top: 1em;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 100%;
+    color: red;
+}
+
+.contenedor-responsive {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -0%);
+}
+
+.scrolldow img {
+    width: 70px;
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.title h1 {
+    padding-top: 1em;
+    font-family: sans-serif;
+    padding-bottom: 1em;
+    font-size: 150%;
+    padding-left: .2em;
+}
+
+.title p {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding-left: .5em;
+    color: black;
+    margin: 0em 2em;
+
+}
+
+.container-img {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container-img img {
+    width: 50vh;
+    max-width: 500px;
+    min-width: 200px;
+    padding-bottom: 5em;
+
+}
+
+.ventajas {
+    padding-top: 2em;
+}
+
+.ventajas h1 {
+    font-family: sans-serif;
+    font-size: 150%;
+    padding-left: .2em;
+}
+
+
+
+.ventajas p {
+    padding-top: 2em;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding-left: 1em;
+}
+
+.trigger {
+    height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+.fondo-background {
+    background-image: url(/imgWeb/fondo-platillas.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.Demostracion {
+    padding-top: 5em;
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 2em;
+}
+.barras{
+    position: absolute;
+    right: 0;
+    padding-top: 1em;
+}
+.menus{
+    height: 4px;
+    width: 20px;
+    background-color: black;
+    margin: .2em 1em;
+    border-radius: 20px;
+}
+.tocar h1{
+    font-family: sans-serif;
+    font-size: 100%;
+    text-align: center;
+    padding-top: 1em;
+}
+.contenedor-menu{
+    height: 100%;
+    width: 100%;
+    padding-top: 2em;
+}
+.contenedor-menu p{
+    font-family: sans-serif;
+    text-align: center;
+    padding: .2em;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%);
+}
+.botones button{
+    margin: .5em;
+    padding: .7em ;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+.botones button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+

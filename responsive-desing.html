@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Responsive</title>
+</head>
+
+<body>
+  <section class="header">
+    <div class="title-header">
+      <h1>Responsive Desing</h1>
+      <p>Go back</p>
+    </div>
+    <div class="contenedor-responsive">
+      <img src="imgWeb/geinzresponsive.webp" alt="">
+    </div>
+    <div class="scrolldow">
+      <img src="imgWeb/scrooldow.webp" alt="">
+    </div>
+  </section>
+  <section class="primera-part">
+    <div class="title">
+      <h1>Diseño responsive:</h1>
+      <p>
+        Nuestros sitios web están diseñados con una tecnología avanzada que
+        se adapta automáticamente a cualquier dispositivo, ya sea una
+        computadora, una tablet o un teléfono móvil. Esto garantiza que tu
+        contenido se vea perfectamente y que la experiencia del usuario sea
+        óptima, sin importar el tamaño de la pantalla. Disfruta de un diseño
+        moderno y atractivo que se ajusta a tus necesidades y a las
+        tendencias actuales de navegación en línea.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="container-img">
+    <img id="caer-img" src="imgWeb/responsivedesing.png" alt="" />
+  </section>
+
+  <div id="trigger-section" class="trigger">
+    <h2>Geinz</h2>
+    <p>Responsive desing</p>
+    <script>
+      window.addEventListener('scroll', function () {
+        var triggerSection = document.getElementById('trigger-section');
+        var triggerPosition = triggerSection.getBoundingClientRect().top;
+
+        if (triggerPosition < window.innerHeight) {
+          var opacity = (window.innerHeight - triggerPosition) / window.innerHeight;
+          triggerSection.style.opacity = opacity;
+        }
+      });</script>
+  </div>
+
+  <section class="fondo-background">
+    <section class="ventajas">
+      <h1>ventajas del diseño responsive</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+        impedit soluta! Impedit eos ab, nostrum omnis, iusto quis placeat eaque
+        aperiam ex assumenda id nobis, consectetur maxime magni ducimus qui.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+        impedit soluta! Impedit eos ab, nostrum omnis, iusto quis placeat eaque
+        aperiam ex assumenda id nobis, consectetur maxime magni ducimus qui.
+      </p>
+    </section>
+
+    <section class="Demostracion">
+      <div class="tocar">
+        <h1>Tocar el boton para ver la animacion</h1>
+      </div>
+      <div class="barras">
+        <div class="menus"></div>
+        <div class="menus"></div>
+        <div class="menus"></div>
+      </div>
+      <div class="contenedor-menu">
+        <p>inicio</p>
+        <p>Nosotros</p>
+        <p>informacion</p>
+        <p>contacto</p>
+      </div>
+      <section class="botones">
+        <button>Celular</button>
+        <button>movil</button>
+      </section>
+    </section>
+
+    <section class="responsive">
+      <h1>Con responsive Desing</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem at illo ducimus aperiam voluptas eveniet vitae
+        excepturi ipsam, animi fuga ipsum mollitia qui aliquid omnis accusamus asperiores tempora a quasi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem at illo ducimus aperiam voluptas eveniet vitae
+          excepturi ipsam, animi fuga ipsum mollitia qui aliquid omnis accusamus asperiores tempora a quasi?</p>
+    </section>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="javasCript/responsive.js"></script>
+</body>
+
+</html>
